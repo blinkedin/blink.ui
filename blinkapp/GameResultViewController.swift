@@ -9,27 +9,32 @@
 import UIKit
 
 class GameResultViewController: UIViewController {
+    
+    var myScore: Int = 0
+    var opponentScore: Int = 0
+    
+    @IBOutlet weak var myScoreLabel: UILabel!
+    @IBOutlet weak var opponentScoreLabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.title = "RESULT"
+        showResult()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func showResult() {
+        myScoreLabel.text = "My Score: \(String.init(repeating: "❤️", count: myScore))"
+        
+        opponentScoreLabel.text = "Opponent Score: \(String.init(repeating: "❤️", count: opponentScore))"
+        
+        if myScore > opponentScore {
+            resultLabel.text = "YOU WIN"
+        } else if myScore < opponentScore {
+            resultLabel.text = "YOU LOSE"
+        } else {
+            resultLabel.text = "DRAW"
+        }
     }
-    */
 
 }

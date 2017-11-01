@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1FFAEB321FA756E000FB3BA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFAEB311FA756E000FB3BA2 /* AppDelegate.swift */; };
-		1FFAEB341FA756E000FB3BA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFAEB331FA756E000FB3BA2 /* ViewController.swift */; };
 		1FFAEB371FA756E000FB3BA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FFAEB351FA756E000FB3BA2 /* Main.storyboard */; };
 		1FFAEB391FA756E000FB3BA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFAEB381FA756E000FB3BA2 /* Assets.xcassets */; };
 		1FFAEB3C1FA756E000FB3BA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FFAEB3A1FA756E000FB3BA2 /* LaunchScreen.storyboard */; };
 		1FFAEB471FA756E000FB3BA2 /* blinkappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFAEB461FA756E000FB3BA2 /* blinkappTests.swift */; };
 		1FFAEB521FA756E100FB3BA2 /* blinkappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFAEB511FA756E100FB3BA2 /* blinkappUITests.swift */; };
+		1FFAEB601FA7600A00FB3BA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFAEB5F1FA7600A00FB3BA2 /* MainViewController.swift */; };
+		1FFAEB621FA7601100FB3BA2 /* GamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFAEB611FA7601100FB3BA2 /* GamingViewController.swift */; };
+		1FFAEB641FA7602900FB3BA2 /* GameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFAEB631FA7602900FB3BA2 /* GameResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		1FFAEB2E1FA756E000FB3BA2 /* blinkapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blinkapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFAEB311FA756E000FB3BA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FFAEB331FA756E000FB3BA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1FFAEB361FA756E000FB3BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FFAEB381FA756E000FB3BA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FFAEB3B1FA756E000FB3BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		1FFAEB4D1FA756E100FB3BA2 /* blinkappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blinkappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFAEB511FA756E100FB3BA2 /* blinkappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blinkappUITests.swift; sourceTree = "<group>"; };
 		1FFAEB531FA756E100FB3BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FFAEB5F1FA7600A00FB3BA2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1FFAEB611FA7601100FB3BA2 /* GamingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamingViewController.swift; sourceTree = "<group>"; };
+		1FFAEB631FA7602900FB3BA2 /* GameResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				1FFAEB311FA756E000FB3BA2 /* AppDelegate.swift */,
-				1FFAEB331FA756E000FB3BA2 /* ViewController.swift */,
+				1FFAEB5F1FA7600A00FB3BA2 /* MainViewController.swift */,
+				1FFAEB611FA7601100FB3BA2 /* GamingViewController.swift */,
+				1FFAEB631FA7602900FB3BA2 /* GameResultViewController.swift */,
 				1FFAEB351FA756E000FB3BA2 /* Main.storyboard */,
 				1FFAEB381FA756E000FB3BA2 /* Assets.xcassets */,
 				1FFAEB3A1FA756E000FB3BA2 /* LaunchScreen.storyboard */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FFAEB341FA756E000FB3BA2 /* ViewController.swift in Sources */,
 				1FFAEB321FA756E000FB3BA2 /* AppDelegate.swift in Sources */,
+				1FFAEB641FA7602900FB3BA2 /* GameResultViewController.swift in Sources */,
+				1FFAEB621FA7601100FB3BA2 /* GamingViewController.swift in Sources */,
+				1FFAEB601FA7600A00FB3BA2 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

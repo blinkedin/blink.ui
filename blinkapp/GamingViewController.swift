@@ -10,26 +10,37 @@ import UIKit
 
 class GamingViewController: UIViewController {
 
+    var myScore = 5
+    var opponentScore = 5
+    
+    @IBOutlet weak var myScoreLabel: UILabel!
+    @IBOutlet weak var opponentScoreLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.title = "GAMING"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func initScoreLabels() {
+        myScoreLabel.text = String.init(repeating: "❤️", count: myScore)
+        opponentScoreLabel.text = String.init(repeating: "❤️", count: opponentScore)
     }
-    */
+    
+    @IBAction func myScoreReduceButtonClicked() {
+        myScore = myScore > 0 ? myScore - 1 : 0
+        myScoreLabel.text = String.init(repeating: "❤️", count: myScore)
+    }
+    
+    @IBAction func opponentScoreReduceButtonClicked() {
+        opponentScore = opponentScore > 0 ? opponentScore - 1 : 0
+        opponentScoreLabel.text = String.init(repeating: "❤️", count: opponentScore)
+    }
+    
+    @IBAction func goResultButtonClicked() {
+        let resultVC = self.storyboard?.instantiateViewController(withIdentifier: "GameResultViewController") as! GameResultViewController
+        resultVC.myScore = myScore
+        resultVC.opponentScore = opponentScore
+        self.navigationController?.pushViewController(resultVC, animated: true)
+    }
 
 }
