@@ -2,7 +2,7 @@
 
 <img src="./blinkapp/Demo/demo1.png" width="250"> <img src="./blinkapp/Demo/demo2.png" width="250"> <img src="./blinkapp/Demo/demo3.png" width="250">
 
-페이지는 총 세 가지로 나뉘며, 각각 Main, Gaming, Result 이라고 부릅니다.
+페이지는 총 세 가지로 나뉘며, 각각 Main, Gaming, Result 라고 부릅니다.
 
 ### Main
 Main은 하나의 레이블과 세 개의 버튼으로 이루어져 있으며, 첫 번째 버튼인 '게임하기' 만 작동합니다.
